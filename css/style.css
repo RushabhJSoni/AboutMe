@@ -1,0 +1,60 @@
+body *{
+  background-color:  #5C5F58;
+  color: whitesmoke;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #272424;
+  font-size: xx-large;
+}
+
+h2{
+  font-size: x-large;
+}
+
+h3{
+  font-size: large;
+}
+
+h4 {
+  font-size: medium;
+}
+
+header {
+  text-align: center;
+  background-color:white ;
+}
+
+nav{
+  display: inline-block;
+  
+}
+
+li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+aside {
+  width: 280px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  position: sticky;
+}
+
+main {
+  width: 670px;
+  box-sizing: border-box;
+  display: inline-block;
+  
+}
+
+img {
+  width: 50%;
+}
