@@ -51,7 +51,8 @@ aside {
   width: 30%;
   position: fixed;
   padding: 20px;
-  ;
+  /* display: inline-block; */
+  overflow: auto;
   
  
 }
@@ -64,6 +65,8 @@ main {
   color: black;
   font-weight: 600;
   font-family: "Lucida Console", "Courier New", monospace;
+  /* display: inline-block; */
+  overflow: auto;
 
 }
 
@@ -77,6 +80,7 @@ img {
 footer {
   text-align: center;
   color: black;
+  clear: both;
 }
 
 footer a{
