@@ -8,7 +8,7 @@ alert('Welcome to my site, here\'s a fun game for you to know me. Please answer 
 
 let knowMyName = prompt('Do you know my name?')
 
-theyKnow = knowMyName.toLowerCase();
+let theyKnow = knowMyName.toLowerCase();
 console.log(theyKnow);
 
 if (theyKnow === 'yes' || theyKnow === 'y') {
@@ -22,7 +22,7 @@ if (theyKnow === 'yes' || theyKnow === 'y') {
 
 let planet = prompt('Do you know which planet i\'m from?');
 
-newPlanet = planet.toLowerCase();
+let newPlanet = planet.toLowerCase();
 
 console.log(newPlanet);
 
@@ -37,7 +37,7 @@ if (newPlanet === 'yes' || newPlanet === 'y') {
 
 let country = prompt('Do you know the name of country I hail from?');
 
-yesCountry = country.toLowerCase();
+let yesCountry = country.toLowerCase();
 
 console.log(yesCountry);
 
@@ -51,7 +51,7 @@ if (yesCountry === 'yes' || yesCountry === 'y') {
 
 let vehicle = prompt('Do you know the model of my atmospheric vehicle of choice?');
 
-theyKnowVehicle = vehicle.toLowerCase();
+let theyKnowVehicle = vehicle.toLowerCase();
 
 console.log(theyKnowVehicle);
 
