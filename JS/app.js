@@ -1,7 +1,7 @@
 'use strict'
 
 
-let userName = prompt('Hi there! waht\'s your name?');
+let userName = prompt('Hi there! what\'s your name?');
 console.log(userName);
 
 alert('Welcome to my site, here\'s a fun game for you to know me. Please answer with a yes or no');
@@ -64,5 +64,82 @@ if (theyKnowVehicle === 'yes' || theyKnowVehicle === 'y') {
   alert('Please read the instructions!');
 }
 
+
+let randomInt = Math.floor((Math.random() * 100) + 1);
+
+
+for(let i = 3; i >= 0 ; i-- ){
+
+  let userGuess = Number(prompt('Please guess a number between 1 - 100. You have ' + i + 'guesses remaining'));
+  // console.log(userGuess);
+
+  while (userGuess < 1 || userGuess > 100){
+   userGuess = Number(prompt('Please guess a number' + i + 'guesses remaining'));
+    console.log('User input was ' + userGuess);
+  }
+
+let result = (userGuess < randomInt);
+   
+  switch(result){
+
+    case true:
+    
+      alert('you are too low!');
+
+    break;
+  
+    case false:
+
+      alert('you are too high');
+    break;
+
+    default:
+      alert('Thats the right answer!');
+
+      break;
+  }
+
+}
+
+alert('The correct Answer was - ' + randomInt);
+
+const arrayCity = ['sydney' , 'auckland' , 'new york' , 'london' , 'paris' , 'tokyo'];
+console.log(arrayCity);
+
+let guess = arrayCity.length;
+
+
+
+
+let result = false;
+
+while(!result && guess >0){
+
+  let userArrGuess = prompt('Guess my favourite cities!');
+  let finalCity = userArrGuess.toLowerCase();
+  console.log(finalCity);
+
+  for(let j = 0; j < guess; j++) {
+
+
+  if(finalCity === arrayCity[j]){
+    alert('Awesome that\'s one down!' );
+    result = true;
+    break;
+  }
+  
+  }
+
+}
+  
+  
+
+
 alert('Thank you for playing my game and getting to know me better ' + userName + '.' + ' Welcome to my world');
+
+
+
+
+
+
 
