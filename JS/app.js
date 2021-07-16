@@ -118,10 +118,6 @@ const arrayCity = ['sydney' , 'auckland' , 'new york' , 'london' , 'paris' , 'to
 console.log(arrayCity);
 
 let guess = arrayCity.length;
-
-
-
-
 let result = false;
 
 while(!result && guess >0){
@@ -129,20 +125,27 @@ while(!result && guess >0){
   let userArrGuess = prompt('Guess my favourite cities!');
   let finalCity = userArrGuess.toLowerCase();
   console.log(finalCity);
-
+  
   for(let j = 0; j < guess; j++) {
-
-
-  if(finalCity === arrayCity[j]){
+    if(finalCity === arrayCity[j]){
     alert('Awesome that\'s one down!' );
     result = true;
     break;
-  }
-  
+  }else {
+    alert('please try again' );
+    favCity(); 
+}
   }
 
+ 
+    
 }
+  
+  
+
+
 } 
-favCity();
+favCity()
+
 
 alert('Thank you for playing my game and getting to know me better ' + userName + '.' + ' Welcome to my world');
